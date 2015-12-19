@@ -18,18 +18,23 @@ class TIDelegate(btle.DefaultDelegate):
 
 	def handleNotification(self, cHandle, data):
 		data = binascii.b2a_hex(data)
-
+		
 		if data == "00":
-			if self.state == "01":
-				self.leftup()
 			if self.state == "02":
+				self.leftup()
+			if self.state == "01":
 				self.rightup()
 			if self.state == "03":
 				self.bothup()
+			self.state = "00"
+			return
 
-		if data == "01":
-			self.leftdown()
+		if self.state != "00":
+			return
+			
 		if data == "02":
+			self.leftdown()
+		if data == "01":
 			self.rightdown()
 		if data == "03":
 			self.bothdown()
