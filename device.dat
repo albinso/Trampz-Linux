@@ -1,0 +1,83 @@
+Connecting to: 78:A5:04:19:58:E1, address type: public
+Service <uuid=Device Information handleStart=16 handleEnd=34> :
+    Characteristic <System ID>, supports READ 
+    -> b'\xe1X\x19\x00\x00\x04\xa5x'
+    Characteristic <Model Number String>, supports READ 
+    -> b'N.A.\x00'
+    Characteristic <Serial Number String>, supports READ 
+    -> b'N.A.\x00'
+    Characteristic <Firmware Revision String>, supports READ 
+    -> b'1.4 (Jul 12 2013)\x00'
+    Characteristic <Hardware Revision String>, supports READ 
+    -> b'N.A.\x00'
+    Characteristic <Software Revision String>, supports READ 
+    -> b'N.A.\x00'
+    Characteristic <Manufacturer Name String>, supports READ 
+    -> b'Texas Instruments\x00'
+    Characteristic <IEEE 11073-20601 Regulatory Certification Data List>, supports READ 
+    -> b'\xfe\x00experimental'
+    Characteristic <PnP ID>, supports READ 
+    -> b'\x01\r\x00\x00\x00\x10\x01'
+Service <uuid=f000aa40-0451-4000-b000-000000000000 handleStart=73 handleEnd=84> :
+    Characteristic <f000aa41-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00\x00'
+    Characteristic <f000aa42-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'
+    Characteristic <f000aa43-0451-4000-b000-000000000000>, supports READ 
+    -> b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+Service <uuid=Generic Attribute handleStart=12 handleEnd=15> :
+    Characteristic <Service Changed>, supports INDICATE 
+Service <uuid=f000aa50-0451-4000-b000-000000000000 handleStart=85 handleEnd=92> :
+    Characteristic <f000aa51-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00\x00\x00\x00'
+    Characteristic <f000aa52-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'
+Service <uuid=f000aa00-0451-4000-b000-000000000000 handleStart=35 handleEnd=42> :
+    Characteristic <f000aa01-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00\x00'
+    Characteristic <f000aa02-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'
+Service <uuid=f000ccc0-0451-4000-b000-000000000000 handleStart=105 handleEnd=115> :
+    Characteristic <f000ccc1-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00\x00\x00\x00'
+    Characteristic <f000ccc2-0451-4000-b000-000000000000>, supports WRITE 
+    Characteristic <f000ccc3-0451-4000-b000-000000000000>, supports WRITE 
+Service <uuid=f000aa20-0451-4000-b000-000000000000 handleStart=54 handleEnd=61> :
+    Characteristic <f000aa21-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00\x00'
+    Characteristic <f000aa22-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'
+Service <uuid=f000aa30-0451-4000-b000-000000000000 handleStart=62 handleEnd=72> :
+    Characteristic <f000aa31-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00\x00\x00\x00'
+    Characteristic <f000aa32-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'
+    Characteristic <f000aa33-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\xc8'
+Service <uuid=f000aa10-0451-4000-b000-000000000000 handleStart=43 handleEnd=53> :
+    Characteristic <f000aa11-0451-4000-b000-000000000000>, supports NOTIFY READ 
+    -> b'\x00\x00\x00'
+    Characteristic <f000aa12-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'
+    Characteristic <f000aa13-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'd'
+Service <uuid=Generic Access handleStart=1 handleEnd=11> :
+    Characteristic <Device Name>, supports READ 
+    -> b'TI BLE Sensor Tag'
+    Characteristic <Appearance>, supports READ 
+    -> b'\x00\x00'
+    Characteristic <Peripheral Privacy Flag>, supports READ 
+    -> b'\x00'
+    Characteristic <Reconnection Address>, supports WRITE 
+    Characteristic <Peripheral Preferred Connection Parameters>, supports READ 
+    -> b'P\x00\xa0\x00\x00\x00\xe8\x03'
+Service <uuid=f000ffc0-0451-4000-b000-000000000000 handleStart=116 handleEnd=65535> :
+    Characteristic <f000ffc1-0451-4000-b000-000000000000>, supports NOTIFY WRITE NO RESPONSE WRITE 
+    Characteristic <f000ffc2-0451-4000-b000-000000000000>, supports NOTIFY WRITE NO RESPONSE WRITE 
+Service <uuid=ffe0 handleStart=93 handleEnd=97> :
+    Characteristic <ffe1>, supports NOTIFY 
+Service <uuid=f000aa60-0451-4000-b000-000000000000 handleStart=98 handleEnd=104> :
+    Characteristic <f000aa61-0451-4000-b000-000000000000>, supports READ 
+    -> b'?\x00'
+    Characteristic <f000aa62-0451-4000-b000-000000000000>, supports READ WRITE 
+    -> b'\x00'

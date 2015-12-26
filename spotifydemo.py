@@ -17,16 +17,16 @@ class SpotifyDelegate(TIDelegate):
 		spotify = session.get_object(
 			"org.mpris.MediaPlayer2.spotify",
 			"/org/mpris/MediaPlayer2")
-		self.leftdown = spotify.Previous
+		self.leftdown = spotify.PlayPause
 		self.rightdown = spotify.Next
-		self.bothdown = spotify.PlayPause
+		self.bothdown = spotify.Previous
 
 
 ADDRESS = "78:A5:04:19:58:E1"
 
 conn = btle.Peripheral(ADDRESS)
 conn.setDelegate(SpotifyDelegate(None))
-
+print("Ready")
 while True:
 	if conn.waitForNotifications(1.0):
 		continue
