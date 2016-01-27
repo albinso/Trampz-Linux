@@ -6,7 +6,10 @@ MAGNETOMETER = {"read": "AA31", "config": "AA32", "period": "AA33", "name": "Mag
 BAROMETER = {"read": "AA41", "config": "AA42", "calibration": "AA43", "period": "AA44", "name": "Barometer"}
 GYROSCOPE = {"read": "AA51", "config": "AA52", "period": "AA53", "name": "Gyroscope"}
 
+SENSORS = [ACCELEROMETER, HUMIDITY, MAGNETOMETER, BAROMETER, GYROSCOPE]
+
 ENABLE_SENSOR  = struct.pack("B", 0x01)
+DISABLE_SENSOR  = struct.pack("B", 0x00)
 def enableGyroscope(X=False, Y=False, Z=False):
 	res = (1 if X else 0) + (2 if Y else 0) + (4 if Z else 0)
 	return struct.pack("B", res)

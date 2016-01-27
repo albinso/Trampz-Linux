@@ -1,4 +1,4 @@
-from UUIDs import *
+
 import binascii
 import struct
 import time

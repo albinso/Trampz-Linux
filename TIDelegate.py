@@ -19,18 +19,7 @@ class TIDelegate(btle.DefaultDelegate):
 	def calcAcceleration(self, val):
 		v = (val * 1.0) / (64);
 		return v
-	def readAccelerationData(self, data):
-		val = binascii.b2a_hex(data)
-		val = int(val, 16)
-		x = val % 0xFF
-		val = val >> 8
-		y = val % 0xFF
-		val = val >> 8
-		z = val % 0xFF
-		x -= 128
-		y -= 128
-		z -= 128
-		return x, y, z
+	
 
 	def handleAcceleration(self, data):
 		pass
@@ -63,7 +52,7 @@ class TIDelegate(btle.DefaultDelegate):
 			return
 			
 		if data == "02":
-			print("Hey")
+			#print("Hey")
 			self.leftdown()
 		if data == "01":
 			self.rightdown()
