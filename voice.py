@@ -38,7 +38,7 @@ def makePluttenHappy():
 	engine = pyttsx.init()
 	#engine.setProperty('voice', voices[i].id)
 	engine.setProperty('volume', 1)
-	engine.say("peeniss")
+	engine.say("foooo")
 	engine.runAndWait()
 	#k.type_string("penizs")
 
