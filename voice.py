@@ -14,7 +14,7 @@ engine = pyttsx.init()
 voices = engine.getProperty('voices')
 
 
-class SpotifyDelegate(TIDelegate):
+class HappyDelegate(TIDelegate):
 
 	def __init__(self, params):
 		TIDelegate.__init__(self, params)
@@ -38,7 +38,7 @@ def makePluttenHappy():
 	engine = pyttsx.init()
 	#engine.setProperty('voice', voices[i].id)
 	engine.setProperty('volume', 1)
-	engine.say("peeniss")
+	engine.say("Kassoreen")
 	engine.runAndWait()
 	#k.type_string("penizs")
 
@@ -46,7 +46,7 @@ def makePluttenHappy():
 ADDRESS = "78:A5:04:19:58:E1"
 
 conn = btle.Peripheral(ADDRESS)
-conn.setDelegate(SpotifyDelegate(None))
+conn.setDelegate(HappyDelegate(None))
 print("Ready")
 while True:
 	if conn.waitForNotifications(1.0):

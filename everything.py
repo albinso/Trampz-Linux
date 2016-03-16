@@ -5,7 +5,7 @@ import struct
 import time
 import sys, os
 import struct
-sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(__file__), '/usr/local/lib/python2.7/dist-packages/bluepy/', 'bluepy')))
+sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(__file__), '/usr/local/lib/python2.7/dist-packages/bluepy/', 'bluepy'))) # TODO: Fix this
 from bluepy.bluepy.btle import UUID, Peripheral
 
 

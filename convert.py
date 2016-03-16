@@ -89,11 +89,7 @@ def calcMagn(raw):
 	return (raw * 1.0) / (65536.0/2000)
 
 def calcBar(r_temp, pres, calibration):
-	print(r_temp)
-	print(pres)
-	print(calibration)
 	val = calibration[0]*r_temp*100
-	print(val)
 	temp = val >> 24
 	val = calibration[1]*100
 	temp += val >> 10

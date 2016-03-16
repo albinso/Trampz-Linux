@@ -8,11 +8,6 @@ import pyttsx
 
 
 
-def printText():
-	print("")
-
-
-
 class SpotifyDelegate(TIDelegate):
 
 	def __init__(self, params):

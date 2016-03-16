@@ -10,6 +10,8 @@ SENSORS = [ACCELEROMETER, HUMIDITY, MAGNETOMETER, BAROMETER, GYROSCOPE]
 
 ENABLE_SENSOR  = struct.pack("B", 0x01)
 DISABLE_SENSOR  = struct.pack("B", 0x00)
+
+
 def enableGyroscope(X=False, Y=False, Z=False):
 	res = (1 if X else 0) + (2 if Y else 0) + (4 if Z else 0)
 	return struct.pack("B", res)

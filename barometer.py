@@ -17,25 +17,3 @@ def getMagnetism(data):
 	z = int(z, 16)
 
 	return x, y, z
-
-uuid = MAGNETOMETER["read"]
-conf = MAGNETOMETER["config"]
-temp_uuid = UUID("F000" + uuid + "-0451-4000-B000-000000000000")
-conf_uuid = UUID("F000" + conf + "-0451-4000-B000-000000000000")
- 
-p = Peripheral("78:A5:04:19:58:E1")
-conf = p.getCharacteristics(uuid=conf_uuid)[0]
-sensorOn  = struct.pack("B", 0x01)
-conf.write(sensorOn, withResponse=True)
-try:
-	ch = p.getCharacteristics(uuid=temp_uuid)[0]
-	if (ch.supportsRead()):
-		while 1:
-			data = ch.read()
-			val = binascii.b2a_hex(data)
-			
-			x, y, z = getMagnetism(val)
-			print("X: " + str(x) + " Y: " + str(y) + " Z: " + str(z))
- 
-finally:
-	p.disconnect()
